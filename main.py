@@ -64,5 +64,5 @@ def main():
 
 
 if __name__ == "__main__":
-    # main()
-    exec(open("check_performance.py").read())
+    main()
+    # exec(open("check_performance.py").read())
