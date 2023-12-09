@@ -63,7 +63,7 @@ def train_test_split(imgs_paths: List[str], train_split: float, train_dir_path: 
     return fails
 
 
-def get_images_stats(dir: str) -> Tuple[List[str], Dict[Tuple[int, int]], List[str]]:
+def get_images_stats(dir: str) -> Tuple[List[str], Dict[Tuple[int, int], List[str]]]:
     """
     given a directory, returns list of images, resolutions, and corrupted file names
     :param dir: directory
