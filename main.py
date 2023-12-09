@@ -8,8 +8,8 @@ import os
 def main():
     print('--- Dataset download and stats ---')
     # dataset download and unzip
-    # URL = 'https://download.microsoft.com/download/3/E/1/3E1C3F21-ECDB-4869-8368-6DEBA77B919F/kagglecatsanddogs_5340.zip'
-    # create_dataset(URL)
+    URL = 'https://download.microsoft.com/download/3/E/1/3E1C3F21-ECDB-4869-8368-6DEBA77B919F/kagglecatsanddogs_5340.zip'
+    create_dataset(URL)
 
     # print useful dataset stats
     cats_folder = './dataset/PetImages/Cat/'
