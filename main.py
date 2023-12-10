@@ -8,8 +8,8 @@ import os
 def main():
     print('--- Dataset download and stats ---')
     # dataset download and unzip
-    URL = 'https://download.microsoft.com/download/3/E/1/3E1C3F21-ECDB-4869-8368-6DEBA77B919F/kagglecatsanddogs_5340.zip'
-    create_dataset(URL)
+    # URL = 'https://download.microsoft.com/download/3/E/1/3E1C3F21-ECDB-4869-8368-6DEBA77B919F/kagglecatsanddogs_5340.zip'
+    # create_dataset(URL)
 
     # print useful dataset stats
     cats_folder = './dataset/PetImages/Cat/'
@@ -52,7 +52,7 @@ def main():
     os.makedirs('./trained model/', exist_ok=True)
     model.save('./trained model/classifier.h5')
 
-    # model evaluation    
+    # model evaluation
     print('\n--- Model evaluation metrics ---')
     plot_training_curves(history.history)
     acc, prec, rec, f1, conf_mat = model_evaluation(model, test_gen)
@@ -64,5 +64,5 @@ def main():
 
 
 if __name__ == "__main__":
-    # main()
-    exec(open("check_performance.py").read())
+    main()
+    # exec(open("check_performance.py").read())

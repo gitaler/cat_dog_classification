@@ -80,7 +80,7 @@ def get_images_stats(dir: str) -> Tuple[List[str], Dict[Tuple[int, int], List[st
             if img_size not in resolutions: resolutions[img_size] = 0
             resolutions[img_size] += 1
             file_names.append(composed_path)
-        finally:
+        except:
             corrupted_file_names.append(composed_path)
     return file_names, resolutions, corrupted_file_names
 

@@ -1,3 +1,5 @@
+import os
+
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import pickle
@@ -13,6 +15,7 @@ test_cats = list(map(lambda x: './dataset/PetImages/Cat/'+x, test_cats))
 with open('./results/dogs_test.pickle', 'rb') as file_pkl:
     test_dogs = pickle.load(file_pkl)
 test_dogs = list(map(lambda x: './dataset/PetImages/Dog/'+x, test_dogs))
+
 
 # combine cats and dogs data
 combined_data = [(path, '0') for path in test_cats] + [(path, '1') for path in test_dogs]
