@@ -58,7 +58,7 @@ def train_test_split(imgs_paths: List[str], train_split: float, train_dir_path: 
                 shutil.copy(img_path, f"{train_dir_path}{img_path.split('/')[-1]}")
             else:
                 shutil.copy(img_path, f"{test_dir_path}{img_path.split('/')[-1]}")
-        finally:
+        except:
             fails.append(img_path)
     return fails
 
