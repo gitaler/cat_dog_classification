@@ -3,7 +3,7 @@ Beliven Code Challenge
 
 Project explained in 'report.pdf'
 
-If you have already downloaded the dataset, comment out the first two lines of the main function and create the 'dataset' folder. Insert the dataset into it.
+If you have already downloaded the dataset, comment out lines 11-12 of the main() function and create the 'dataset' folder. Insert the dataset into it.
 
 dataset/\
 │\
